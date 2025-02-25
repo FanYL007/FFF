@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日表现评分系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>每日表现评分系统</h1>
+        <form id="ratingForm">
+            <div class="question-box">
+                <label for="date">选择日期：</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="question-box">
+                <label for="respect">1. 今日尊重表现（20 分）：</label>
+                <input type="number" id="respect" name="respect" min="0" max="20" required>
+                <small>0 - 20 分，越尊重，分值越高</small>
+            </div>
+            <div class="question-box">
+                <label for="communication">2. 今日沟通表现（20 分）：</label>
+                <input type="number" id="communication" name="communication" min="0" max="20" required>
+                <small>0 - 20 分，越不犟，沟通越好，分值越高</small>
+            </div>
+            <div class="question-box">
+                <label for="interrupting">3. 今日抢话表现（20 分）：</label>
+                <input type="number" id="interrupting" name="interrupting" min="0" max="20" required>
+                <small>0 - 20 分，越不抢话，分值越高</small>
+            </div>
+            <div class="question-box">
+                <label for="expression">4. 今日表达表现（20 分）：</label>
+                <input type="number" id="expression" name="expression" min="0" max="20" required>
+                <small>0 - 20 分，表达越好，分值越高</small>
+            </div>
+            <div class="question-box">
+                <label for="persuasibility">5. 今日听劝表现（20 分）：</label>
+                <input type="number" id="persuasibility" name="persuasibility" min="0" max="20" required>
+                <small>0 - 20 分，不否认意见，听取建议并照做，分值越高</small>
+            </div>
+            <div class="question-box">
+                <label for="special-content">6. 今日特别表现（编写内容）：</label>
+                <textarea id="special-content" name="special-content" required></textarea>
+                <label for="special">今日特别表现（10 分）：</label>
+                <input type="number" id="special" name="special" min="0" max="10" required>
+                <small>今日有没有让你开心的表现，并给予一定评分</small>
+            </div>
+            <div class="question-box">
+                <label for="improvement">7. 明日的改进建议：</label>
+                <textarea id="improvement" name="improvement" required></textarea>
+            </div>
+            <input type="submit" value="提交">
+        </form>
+        <div id="result"></div>
+        <div id="summary"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

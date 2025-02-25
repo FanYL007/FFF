@@ -1,0 +1,167 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.question-box {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.question-box:hover {
+    border-color: #3498db;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+input[type="date"],
+input[type="number"],
+textarea {
+    width: calc(100% - 30px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 5px;
+}
+
+input[type="date"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #3498db;
+    outline: 0;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+}
+
+small {
+    display: block;
+    margin-top: 8px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+#result,
+#summary {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #ecf0f1;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+#summary h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.8rem;
+}
+
+.summary-item {
+    position: relative;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-item .date {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.summary-item .score-grade {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+.summary-item .score-grade p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.grade-fail {
+    color: #e74c3c;
+}
+
+.grade-pass {
+    color: #27ae60;
+}
+
+.grade-good {
+    color: #f39c12;
+}
+
+.grade-excellent {
+    color: #9b59b6;
+}
+
+.grade-perfect {
+    color: #3498db;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
